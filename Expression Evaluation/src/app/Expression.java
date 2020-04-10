@@ -23,11 +23,8 @@ public class Expression {
      */
     public static void 
     makeVariableLists(String expr, ArrayList<Variable> vars, ArrayList<Array> arrays) {
-    	
-    	
     	// This is where Two arraylists are being populated 
-    	 
-    	String newexpr = expr.replaceAll("\\s+", "");
+    	 	String newexpr = expr.replaceAll("\\s+", "");
 		for (int i = 0; i < newexpr.length(); i++) {
 			String temp = "";
 			while (i < newexpr.length() && Character.isLetter(newexpr.charAt(i))) {
@@ -60,8 +57,8 @@ public class Expression {
      * @param vars The variables array list, previously populated by makeVariableLists
      * @param arrays The arrays array list - previously populated by makeVariableLists
      */
-    public static void 
-    loadVariableValues(Scanner sc, ArrayList<Variable> vars, ArrayList<Array> arrays) 
+    
+public static void loadVariableValues(Scanner sc, ArrayList<Variable> vars, ArrayList<Array> arrays) 
     throws IOException {
         while (sc.hasNextLine()) {
             StringTokenizer st = new StringTokenizer(sc.nextLine().trim());
@@ -99,8 +96,7 @@ public class Expression {
      * @param arrays The arrays array list, with values for all array items
      * @return Result of evaluation
      */
-    public static float 
-    evaluate(String expr, ArrayList<Variable> vars, ArrayList<Array> arrays) {
+    public static float evaluate(String expr, ArrayList<Variable> vars, ArrayList<Array> arrays) {
     	String newexpr = expr.replaceAll("\\s+", "");
 		int result = 0;
 		Stack<Float> operand = new Stack<>();
