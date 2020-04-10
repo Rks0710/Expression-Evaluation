@@ -8,7 +8,7 @@
         # It will also contain the values correspoding to those indexes in that array (so (2,5), (1,100), (3, 2.5))
 # When you execute the code:
   # First, It will ask for the expression itself:
-    # If you put in the number withouth variables, just press enter when it asks for the text file
+    # If you put in the number withouth variables
   # Second, It will ask for the text file that you created with your varaible names and an array 
-    # Which you will provide on the second input
+    # Which you will provide on the second input if you used variables in your expression 
     
